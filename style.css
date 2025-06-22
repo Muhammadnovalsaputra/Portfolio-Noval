@@ -1,4 +1,80 @@
+section{
+    padding :top 128px;
+    overflow: hidden;
+    height: 100vh;     /* Pastikan tinggi 1 layar penuh */
+    margin: 0;
+    padding: 0;
+}
+
+section#home {
+    height: 100vh; /* Full tinggi layar */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Biar konten di atas, arrow di bawah */
+    
+}
+
+.arrow {
+    margin-bottom: 20px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.btn{
+    border: 3px solid black;
+    border-radius: 24px;
+}
+.btn:hover{
+    border: 3px solid black;
+    background-color: black;
+    color: white;
+}
 .navbar {
     background-color: white;
     box-shadow: 0 0 0 4px rgb(0,0,0, 0.25);
+}
+.profile-img {
+    width: 400px; /* Ukuran lebih kecil */
+    height: 350px;
+    object-fit: cover;
+    border-radius: 100%; /* Untuk membuat gambar bulat */
+    border: 4px solid white; /* Opsional: border lingkaran */
+    position: fixed;
+    top: 200px;
+    right: 100px;
+    object-fit: cover;
+    z-index: 1000;
+}
+
+.content-text {
+    margin-top: 120px; /* Atau gunakan padding-top */
+}
+.home h1{
+    font-size: 72px;
+}
+.home h3{
+    font-size: 48px;
+}
+.home .arrow img{
+    width: 60px;
+
+}
+#arrow{
+    animation: 2s updown infinite;
+}
+
+@keyframes updown{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0);
+
+    }
 }
