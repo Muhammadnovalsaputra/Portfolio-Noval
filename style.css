@@ -188,6 +188,41 @@ position: relative;
 #work-3:hover::after{
     content:'Web Project' ;
 }
+
+.contact{
+    padding-bottom: 128px;
+}
+
+.contact::before{
+    content: 'contact';
+    font-size: 72px;
+  color: gray;
+  opacity: 0.1;
+  font-weight: 700;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  pointer-events: none;
+
+}
+.contact {
+  position: relative;
+  padding-top: 100px;
+  overflow: visible;
+}
+
+.contact-form{
+    border: 1px solid black;
+    padding: 64px 32px ;
+}
+
+.form-label{
+    font-weight: 700;
+}
+
+
+
 @keyframes updown{
     0%{
         transform: translateY(0);
