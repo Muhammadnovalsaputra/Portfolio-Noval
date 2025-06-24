@@ -4,6 +4,19 @@ section{
     height: 100vh;     /* Pastikan tinggi 1 layar penuh */
     margin: 0;
     padding: 0;
+    position: relative;
+}
+
+section::before{
+    z-index: -1;
+    content: '';
+    font-size: 72px;
+    color: rgb(50, 47, 47);
+    opacity: 0.25;
+    position: absolute;
+    font-weight:700 ;
+    top: -10px;
+    left: -10px;
 }
 
 section#home {
@@ -21,13 +34,46 @@ section#home {
     left: 50%;
     transform: translateX(-50%);
 }
+.about{
+position: relative;
+  padding-top: 100px;
+  overflow: visible;
+}
+
+.about::before {
+    content: 'About';
+  font-size: 72px;
+  color: gray;
+  opacity: 0.1;
+  font-weight: 700;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  pointer-events: none; /* optional */
+}
+
+
+.about-exp {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.about-exp-item-header {
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    
+}
+.about-exp-item-detail{
+    display: none;
+}
 
 
 .btn{
     border: 3px solid black;
     border-radius: 24px;
 }
-.btn:hover{
+.btn:hover, .btn.button.active {
     border: 3px solid black;
     background-color: black;
     color: white;
@@ -37,16 +83,15 @@ section#home {
     box-shadow: 0 0 0 4px rgb(0,0,0, 0.25);
 }
 .profile-img {
-    width: 400px; /* Ukuran lebih kecil */
+      position: sticky; /* ✅ tetap di posisi saat scroll */
+    top: 280px;       /* sesuaikan dengan kebutuhan */
+    right: 100px;     /* sesu0ikan juga */
+    width: 400%;
     height: 350px;
     object-fit: cover;
-    border-radius: 100%; /* Untuk membuat gambar bulat */
-    border: 4px solid white; /* Opsional: border lingkaran */
-    position: fixed;
-    top: 200px;
-    right: 100px;
-    object-fit: cover;
-    z-index: 1000;
+    border-radius: 50%;
+    border: 4px solid white;
+    z-index: 10;
 }
 
 .content-text {
