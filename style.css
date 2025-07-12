@@ -179,7 +179,7 @@ position: relative;
 
 }
 #work-2:hover::after{
-    content:'Web Project' ;
+    content:'Customer Service' ;
 }
 
 #work-3{
@@ -220,6 +220,44 @@ position: relative;
 .form-label{
     font-weight: 700;
 }
+
+.contact-form-card {
+  border: 2px solid #000;
+  border-radius: 16px;
+  padding: 32px;
+  background-color: #fff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-card h2 {
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.contact-inputs {
+  display: block;
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.contact-form-card button {
+  border: 2px solid black;
+  padding: 8px 24px;
+  border-radius: 12px;
+  background-color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.contact-form-card button:hover {
+  background-color: black;
+  color: white;
+}
+
 
 
 

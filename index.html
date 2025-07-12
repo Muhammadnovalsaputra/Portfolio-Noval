@@ -17,16 +17,16 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="#home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Work</a>
+          <a class="nav-link" href="#work">Work</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Contact</a>
+          <a class="nav-link disabled" aria-disabled="true" >Contact</a>
         </li>
       </ul>
     </div>
@@ -38,7 +38,7 @@
             <h3 class="fw-semibold">Hi, I am</h3>
             <h1 class="fw-bold">Muhammad Noval</h1>
             <p>I am Front End based in Indonesia</p>
-            <a class="btn" href="images/profil.jpeg" download>Resume</a>
+            <a class="btn" href="images/cv.pdf" download>Resume</a>
         </div>
         <div class="col-4">
             <img src="images/profil.jpeg" alt="profil" class="profile-img img-fluid mt-5">
@@ -46,10 +46,10 @@
         </div>
         
     </div>
-    <div class=" arrow w-100 d-flex align-items-center flex-column">
-        <a class="text-decoration-none text-dark" href="#about">More info</a>
+    <a href="#about"  class="text-decoration-none arrow w-100 d-flex align-items-center flex-column">
+        <div class="text-dark" href="#about">More info</div>
         <img id="arrow" class="mt-2" src="images/arrow.svg" alt="arrow icon">
-    </div>
+    </a>
 </section>
 <section id="about" class="about container">
   <p>
@@ -62,12 +62,16 @@
     <div class="about-exp-item">
     <div class="about-exp-item-header">
       <div>
-        <h5>Software Engineer</h5>
-        <p>coding studio (2021-now)</p>
+        <h5>Project Work </h5>
+        <p>Smk Telkon Jakarta (Agustus - Oktober 2021)</p>
       </div>
       <button class="btn button" onclick="toggleDetail(event)">more info</button>
     </div>
-    <p class="about-exp-item-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus omnis nam soluta perferendis consequatur sequi, eos, rerum earum corrupti ducimus, laboriosam hic dicta cupiditate quos! Dolore obcaecati aliquam deleniti optio!</p>
+    <p class="about-exp-item-detail">Tugas akhir kelulusan membuat website jasa service AC menggunakan 
+    HTML CSS (bootsrap).
+    Mengembangkan website untuk layanan servis AC sebagai salah satu syarat kelulusan dengan menggunakan PHP dan MySQL.
+    Membangun fitur-fitur utama seperti beranda, layanan, kontak, dan formulir pendaftaran untuk memudahkan pelanggan dalam mengajukan layanan.
+    Mengelola database MySQL untuk menyimpan data pelanggan dan permintaan servis secara aman dan terstruktur.</p>
   </div>
   </div>
 
@@ -75,22 +79,27 @@
     <div class="about-exp-item-header">
       <div>
         <h5>Customer Service</h5>
-        <p> Xinchuan Telecome (2021-now)</p>
+        <p> Xinchuan Telecome (Mei 2023 - April 2024)</p>
       </div>
       <button class="btn button" onclick="toggleDetail(event)">more info</button>
     </div>
-    <p class="about-exp-item-detail">Deskripsi pekerjaan...</p>
+    <p class="about-exp-item-detail">Saya bertanggung jawab untuk merespon pertanyaan pelanggan dengan cepat serta menangani komplain yang masuk melalui pesan di Facebook, Line, dan Instagram. Selain itu, saya juga melakukan proses transaksi yang terjadi dan memastikan setiap interaksi berjalan dengan baik.
+       Saya selalu berusaha menjaga hubungan baik dengan pelanggan guna menciptakan pengalaman layanan yang positif dan berkelanjutan.</p>
   </div>
 
   <div class="about-exp-item">
     <div class="about-exp-item-header">
       <div>
         <h5>Customer Service </h5>
-        <p>Astro (2021-now)</p>
+        <p>PT Astro Technologies Indonesia (Agustus-Oktober 2025)</p>
       </div>
       <button class="btn button" onclick="toggleDetail(event)">more info</button>
     </div>
-    <p class="about-exp-item-detail">Deskripsi pekerjaan...</p>
+    <p class="about-exp-item-detail">saya bertanggung jawab menangani komplain, pertanyaan, dan berbagai masalah lain yang masuk dari pelanggan melalui live chat Astro Care. 
+      Dalam peran ini, saya secara konsisten menangani rata-rata 50 chat per hari dan merespons pesan pembuka pelanggan dalam waktu 25 detik untuk memastikan kepuasan pelanggan. 
+      Saya juga dituntut untuk mengambil keputusan dengan cepat dan tepat dalam menyelesaikan isu pelanggan. Selain itu, saya bekerja sama secara aktif dengan tim untuk memastikan pengiriman pesanan dilakukan tepat waktu serta menjaga SLA agar tidak terjadi keterlambatan.
+       Saya juga berkoordinasi dengan driver 3PL untuk menyelesaikan kasus salah pengantaran (wrong drop). Tidak hanya itu, saya melakukan tindak lanjut kepada pelanggan yang memberikan rating buruk untuk memahami permasalahan yang terjadi, 
+      memberikan solusi yang sesuai, serta berupaya meningkatkan pengalaman dan kepuasan pelanggan secara keseluruhan.</p>
   </div>
 </section>
 
@@ -98,17 +107,19 @@
 <section id="work" class="work container">
   <div class="row d-flex align-item-center gap-5">
     <div class="col">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam minima, quisquam aspernatur modi laborum maiores impedit in. Numquam magnam incidunt eum culpa libero, architecto quasi mollitia pariatur ut reprehenderit sapiente.</p>
+      <p>Saya memiliki latar belakang di bidang Rekayasa Perangkat Lunak dan pengalaman profesional di layanan pelanggan, dengan semangat tinggi untuk berkarir sebagai Front-End Developer. Saya memulai karir melalui proyek magang di SMK Telkom Jakarta, di mana saya mengembangkan website layanan servis AC menggunakan PHP dan MySQL, lengkap dengan fitur beranda
+        Setelahnya, saya mengembangkan soft skill dan problem-solving melalui pengalaman sebagai customer service di dua perusahaan, yaitu Xinchuan Telecome dan PT Astro Technologies Indonesia. Selama periode ini, saya terbiasa menghadapi berbagai tipe pelanggan, menyelesaikan masalah secara cepat, serta menjaga komunikasi dan kolaborasi lintas tim.</p>
+        <p>Kini, saya berkomitmen untuk fokus membangun karir di dunia front-end development, dengan ketertarikan besar pada pengembangan antarmuka web yang interaktif, responsif, dan user-friendly. Saya sedang terus mengembangkan kemampuan saya dalam HTML, CSS, JavaScript, dan framework seperti React untuk mendukung peralihan karir ini secara profesional dan berkelanjutan.</p>
     </div>
     <div class="col work-img">
   <div id="work-1" class="work-img-item">
-    <img src="images/work-1.png" alt="work 1">
+    <img src="images/project1.png" alt="work 1">
   </div>
   <div id="work-2" class="work-img-item">
-    <img src="images/work-2.png" alt="work 2">
+    <img src="images/cs.jpeg" alt="work 2">
   </div>
   <div id="work-3" class="work-img-item">
-    <img src="images/work-3.png" alt="work 3">
+    <img src="images/project3.png" alt="work 3">
   </div>
 </div>
   </div>
@@ -118,41 +129,38 @@
 <section id="contact" class="contact container">
   <div class="row d-flex align-items-center gap-5">
     <div class="col">
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo veniam amet at maxime voluptatem natus odit fugiat distinctio sapiente praesentium incidunt ducimus, nihil magni officiis, nobis repudiandae dignissimos, quidem inventore?</p>
+      <p>Jika Anda tertarik untuk bekerja sama atau memiliki pertanyaan lebih lanjut, 
+        silakan hubungi saya melalui form di bawah ini atau melalui media sosial yang tersedia.</p>
       <div class="row">
       <div class="col d-flex flex-column align-items-center">
-      <img src="images/Facebook.svg" alt="facebook">
-      <p>Muhammad Noval</p>
+      <img src="images/linkeidln1.svg" alt="facebook">
+      <p>Muhammad-Noval</p>
       </div>
 
         <div class="col">
-          <img src="images/Twitter.svg" alt="Twitter">
-          <p>Muhammad Noval</p>
+          <img src="images/email.svg" alt="Twitter">
+          <p>muhammadnoval852@gmail.com</p>
         </div>
         <div class="col">
-          <img src="images/Instagram.svg" alt="Instagram">
-          <p>Muhammad Noval</p>
+          <img src="images/whatshapp.svg" alt="Instagram" a href="https://www.instagram.com/nopalll02/">
+          <p>085719036097</p>
         </div>
       </div>
     </div>
-    <div class="col">
-      <form class="contact-form" onsubmit="onFormSubmit(event)">
-  <div class="mb-3">
-    <label for="inp_email" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="inp_email" placeholder="Your email">
-    
-  </div>
-  <div class="mb-3">
-    <label for="inp_subject" class="form-label">Subject</label>
-    <input type="text" class="form-control" id="inp_subject" placeholder="Your Subject">
-  </div>
 
-  <div class="mb-3">
-    <label for="inp_massage" class="form-label">message</label>
-    <input type="text" class="form-control" id="inp_massage" placeholder="Your massage">
-  </div>
-  <div class="d-flex justify-content-center mt-5">
-    <button type="submit" class="btn button">Submit</button>
+
+    <div class="col">
+      <form action="https://api.web3forms.com/submit" method="post" class="contact-form-card" autocomplete="off">
+
+        <div>
+          <h2>Send email</h2>
+          <hr>
+        </div>
+          <input type="hidden" name="access_key" value="2b7f81e5-6576-4d9b-9307-049d108c6564">
+          <input type="text" name="name" placeholder="Your name " class="contact-inputs" required>
+          <input type="text" name="Email" placeholder="Your Email " class="contact-inputs" required>
+          <input type="text" name="massage" placeholder="massage " class="contact-inputs" required>
+          <button type="submit">Submit</button>
 </form>
   </div>
 
